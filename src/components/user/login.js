@@ -26,7 +26,6 @@ class Login extends React.Component {
   }
 
   handleSubmit(e) {
-    console.log()
     e.preventDefault()
     axios.post('/api/login', this.state.data)
       .then(res => {
